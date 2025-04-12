@@ -5,6 +5,7 @@ This project aims to predict loan approval outcomes using machine learning techn
 ## Dataset
 
 Format: CSV
+
 The dataset contains 13 features : 
 1.	**Loan**:	A unique id 
 2.	**Gender**:	Gender of the applicant Male/female
@@ -18,18 +19,13 @@ The dataset contains 13 features :
 10.	**Loan_Amount_Term**:	Terms of loan (in months)
 11.	**Credit_History**:	Credit history of individual’s repayment of their debts
 12.	**Property_Area**:	Area of property i.e. Rural/Urban/Semi-urban 
-13.	**Loan_Status**:	Status of Loan Approved or not i.e. Y- Yes, N-No
+13.	**Loan_Status**:	Status of Loan Approved or not i.e. Y- Yes, N- No
 
 
 ## Objectives
-
-1. Analyze ride distribution across weekdays and months
-
-2. Identify peak ride hours and days
-
-3. Visualize ride category distribution
-
-4. Determine maximum ride distance trends.
+1. Preprocessing the dataset by handling missing values, encoding categorical variables.
+2. Training and comparing multiple machine learning models to predict loan approval outcomes.
+3. Model performance evaluation using metrics like accuracy.
 
 ## Dependencies:
 
@@ -41,9 +37,6 @@ The dataset contains 13 features :
 6. **seaborn**
 
 ## Insights & Findings
-1. Most of the rides are booked for business purpose.
-2. Most of the people book cabs for Meetings and Meal / Entertain purpose.
-3. Most of the cabs are booked in the time duration of 10am-5pm (Afternoon).
-4. Most of the cabs booked for the distance of 4-5 miles.
-5. Majorly people chooses cabs for the distance of 0-20 miles.
-6. For distance more than 20 miles ca
+1. Correlation analysis showed that Credit_History has a high impact on Loan_Status.
+2. For this classification problem the models used are: KNeighborsClassifiers, RandomForestClassifiers, Support Vector Classifiers (SVC) and Logistics Regression
+3. Random Forest Classifier is giving the best accuracy with an accuracy score of 82% for the testing dataset.
